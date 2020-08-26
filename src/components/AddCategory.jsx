@@ -23,9 +23,10 @@ const AddCategory = ({setCategory}) => {
     return (
         <form onSubmit={handleSubmit}>                   
             <input 
+                onChange={ handleInputChange }
+                placeholder="Ejemplo: Goku"
                 type="text" 
                 value={ inputValue }
-                onChange={ handleInputChange }
             />
         </form>
     )
